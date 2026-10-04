@@ -1,0 +1,5 @@
+node_modules/
+*.log
+.env
+.claude/
+Teste Técnico - Assistente de Desenvolvimento de Software (Candidato).pdf
