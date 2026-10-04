@@ -1,0 +1,16 @@
+{
+  "name": "confiance-products-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API REST de produtos, mais os testes dos Blocos 1 e 2 (teste técnico Confiance Medical)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test src/tests"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0"
+  }
+}
