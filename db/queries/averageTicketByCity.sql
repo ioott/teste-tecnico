@@ -5,7 +5,7 @@
 
 SELECT
     Cliente.cidade AS cidade,
-    AVG(totaisPedido.valorPedido) AS ticketMedio
+    ROUND(AVG(totaisPedido.valorPedido), 2) AS ticketMedio
 FROM Cliente
 JOIN (
     SELECT
