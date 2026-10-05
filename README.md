@@ -1,10 +1,10 @@
-# Teste Técnico — Assistente de Desenvolvimento de Software
+# Teste Técnico - Assistente de Desenvolvimento de Software
 
 ## Como rodar
 
 Requisitos: [Docker](https://docs.docker.com/get-docker/) e [Docker Compose](https://docs.docker.com/compose/install/) (já vem junto no Docker Desktop).
 
-Por que Docker: o projeto precisa de um banco MySQL e da API Node.js rodando juntos. Com `docker compose up`, quem for avaliar sobe os dois com um comando só, sem instalar MySQL ou Node na máquina, e sem risco de "funciona na minha máquina", já que o ambiente é o mesmo pra todo mundo que rodar.
+Por que Docker: o projeto precisa de um banco MySQL e da API Node.js rodando juntos. Com `docker compose up`, quem for avaliar sobe os dois com um comando só, sem instalar MySQL ou Node na máquina, e sem risco de "na minha máquina funciona", já que o ambiente é o mesmo pra todo mundo que rodar.
 
 ```bash
 cp .env.example .env
@@ -38,7 +38,7 @@ Isso roda dois grupos de teste diferentes:
 
 ### Rodar uma query do Bloco 1 manualmente
 
-Com o banco de pé (`docker compose up -d db`), dá pra rodar qualquer arquivo de `db/queries/` direto contra o MySQL, sem precisar do teste. Os comandos abaixo assumem que você está na raiz do projeto (onde fica o `docker-compose.yml`), não dentro de `api/`:
+Com o banco de pé (`docker compose up -d db`), dá pra rodar qualquer arquivo de `db/queries/` direto contra o MySQL, sem precisar do teste. Os comandos abaixo assumem que você está na raiz do projeto:
 
 ```bash
 docker compose exec -T db mysql -uroot -pconfiance confiance < db/queries/revenueByProduct.sql
